@@ -1,3 +1,24 @@
+<h1>Mini Mundo - Landing page para barbearia</h1>
+
+<p>O objetivo do projeto é criar uma Landing Page com a funcionalidade de alterar o tema de fundo, com base na ação feita pelo usuário (evento de clique).</p>
+
+<p>A landing page será autocontida, ou seja, não haverá navegação para outras páginas (internas ou externas).</p>
+
+<h4>A página deve ser compatível com diversos tipos de resolução de telas, por exemplo:</h4>
+
+<ol type="a">
+
+<li>Desktop (1920px)</li>
+<li>Laptop (1440px)</li>
+<li>Tablet (768px)</li>
+<li>Mobile (375px)</li>
+
+</ol>
+
+<p>A página terá um efeito interativo conhecido como "Dark mode". Basicamente a ideia é mudar o layout para a página se tornar mais agradável de ler a noite. Isso vai acontecer através do clique no botão 'Dark', posicionado no topo da página. Clicando novamente no botão, a página retorna para seu estado original (modo light).</p>
+<img src="./public/layout-das-telas/layout-landing-page-tema-claro.png"/>
+<img src="./public/layout-das-telas/layout-landing-page-tema-escuro.png"/>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
