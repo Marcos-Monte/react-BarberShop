@@ -4,28 +4,26 @@ import './style.css';
 
 export default function LandingPage() {
 
-    const [textoBotao, setTextoBotao] = useState('Dark')
-    const [estilo, setEstilo] = useState('light');
+    const light = 'light';
+    const dark = 'dark';
+    const lua = 'assets/moon.png';
+    const sol = 'assets/sun.png';
+
+    const [estilo, setEstilo] = useState(false);
 
     function trocarEstilo() {
-        if (estilo === 'light') {
-            setEstilo('dark');
-            setTextoBotao('Light');
-        } else {
-            setEstilo('light');
-            setTextoBotao('Dark');
-        }
+        setEstilo(!estilo);
 
     }
 
     return (
-        <div className={`body ${estilo}`}>
+        <div className={`body ${estilo ? dark : light}`}>
             <header>
                 <div className="largura-pagina topo">
                     <img className="logo" src="assets\barbearia-logo.png" alt="Logotipo da BarberShop" />
                     <button onClick={trocarEstilo}>
-                        <img className="imagem-botao" src="assets\moon.png" alt="Simbolo de Sol / Lua para auxiliar a mudança entre Light e Darg" />
-                        <span>{textoBotao}</span>
+                        <img className="imagem-botao" src={estilo ? sol : lua} alt="Simbolo de Sol / Lua para auxiliar a mudança entre Light e Darg" />
+                        <span>{estilo ? light : dark}</span>
                     </button>
                 </div>
             </header>

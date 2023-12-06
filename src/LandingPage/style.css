@@ -57,6 +57,7 @@ button {
 }
 
 button span {
+    text-transform: capitalize;
     color: var(--cor-fonte);
 }
 
@@ -110,5 +111,4 @@ p {
     --fundo: #252323;
     --cor-fonte: #fff;
     --marrom-claro: #b2987d;
-
 }
