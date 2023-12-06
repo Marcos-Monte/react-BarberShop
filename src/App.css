@@ -1,17 +1,4 @@
-/* font-family: 'Great Vibes', cursive;
-font-family: 'Poppins', sans-serif; */
-
-:root {
-  --fundo-branco: #fff;
-  --fundo-dark: #252323;
-  --preto: #000;
-  --marrom-claro: #b2987d;
-  --fonte-normal: 'Poppins', sans-serif;
-  --fonte-cursiva: 'Great Vibes', cursive;
-}
-
 * {
   margin: 0;
   padding: 0;
-  font-family: var(--fonte-normal);
 }

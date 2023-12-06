@@ -1,0 +1,98 @@
+/* font-family: 'Great Vibes', cursive;
+font-family: 'Poppins', sans-serif; */
+
+/* Default */
+:root {
+    --fundo-branco: #fff;
+    --fundo-dark: #252323;
+    --preto: #000;
+    --marrom-claro: #b2987d;
+    --fonte-normal: 'Poppins', sans-serif;
+    --fonte-cursiva: 'Great Vibes', cursive;
+}
+
+.body {
+    font-family: var(--fonte-normal);
+    background-color: var(--fundo-branco);
+    width: 100%;
+    height: 100vh;
+    min-width: 280px;
+    position: relative;
+}
+
+.largura-pagina {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px
+}
+
+/* Header */
+header {
+    width: 100%;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    width: 80px;
+}
+
+/* Botao */
+
+button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid var(--marrom-claro)
+}
+
+.imagem-botao {
+    width: 20px
+}
+
+/* Banner */
+
+.banner {
+    width: 100%;
+    height: 35vh;
+    background: url('../../public/assets/banner-barbearia.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.conteudo {
+    width: 100%;
+    height: 55vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+p {
+    margin-top: 30px;
+}
+
+.paragrafo-destaque {
+    font-weight: bold;
+}
+
+.assinatura {
+    font-family: var(--fonte-cursiva);
+    color: var(--marrom-claro);
+    font-size: 60px;
+    margin-top: 60px;
+}
