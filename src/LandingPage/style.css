@@ -12,10 +12,7 @@ font-family: 'Poppins', sans-serif; */
     font-family: var(--fonte-normal);
     background-color: var(--fundo);
     color: var(--cor-fonte);
-    width: 100%;
-    height: 100vh;
-    min-width: 280px;
-    position: relative;
+    font-size: 18px;
 }
 
 .largura-pagina {
@@ -65,7 +62,7 @@ button span {
 
 .banner {
     width: 100%;
-    height: 35vh;
+    height: 300px;
     background: url('../../public/assets/banner-barbearia.jpg') no-repeat;
     background-size: cover;
     background-position: center;
@@ -73,7 +70,7 @@ button span {
 
 .conteudo {
     width: 100%;
-    height: 55vh;
+    padding: 4.1em 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -111,4 +108,27 @@ p {
     --fundo: #252323;
     --cor-fonte: #fff;
     --marrom-claro: #b2987d;
+}
+
+/* Medias */
+
+@media (max-width: 768px) {
+    .banner {
+        height: 150px;
+    }
+
+    h1,
+    .assinatura {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 505px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .body {
+        font-size: 16px;
+    }
 }
