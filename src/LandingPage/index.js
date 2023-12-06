@@ -1,16 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './style.css';
 
 export default function LandingPage() {
+
+    const [textoBotao, setTextoBotao] = useState('Dark')
+    const [estilo, setEstilo] = useState('light');
+
+    function trocarEstilo() {
+        if (estilo === 'light') {
+            setEstilo('dark');
+            setTextoBotao('Light');
+        } else {
+            setEstilo('light');
+            setTextoBotao('Dark');
+        }
+
+    }
+
     return (
-        <div className="body">
+        <div className={`body ${estilo}`}>
             <header>
                 <div className="largura-pagina topo">
                     <img className="logo" src="assets\barbearia-logo.png" alt="Logotipo da BarberShop" />
-                    <button>
+                    <button onClick={trocarEstilo}>
                         <img className="imagem-botao" src="assets\moon.png" alt="Simbolo de Sol / Lua para auxiliar a mudança entre Light e Darg" />
-                        <span>Dark</span>
+                        <span>{textoBotao}</span>
                     </button>
                 </div>
             </header>
